@@ -15,13 +15,13 @@ def get_student(id=None):
     data = r.json()
     print(data)
 
-# get_student(2)
+# get_student()
 
 def create_student():
     data = {
-        'name': 'Demon',
-        'rollno': '1',
-        'description': 'Angel'
+        'name': 'kishor',
+        'rollno': '200',
+        'description': 'GOAT'
     }
     json_data = json.dumps(data)
     r = requests.post(url=URL, data=json_data)
@@ -29,14 +29,14 @@ def create_student():
     data = r.json()
     print(data)
 
-create_student()
+# create_student()
 
 def update_student():
     data = {
-        'id': '5',
+        'id': '11',
         'name': 'credid',
-        'rollno': '10',
-        'description': 'he is the crickter'
+        'rollno': '200',
+        'description': 'he is the demoncoc'
     }
     
     json_data = json.dumps(data)
@@ -55,4 +55,4 @@ def delete_data(id):
     data = r.json()
     print(data)
 
-# delete_data(5)
+# delete_data()

@@ -24,7 +24,7 @@ class student_crud(View):
         
         studentdata = Student.objects.all()
         serializer = StudentSerializer(studentdata, many=True)
-        json_data = JSONRenderer().render(serializer._data)
+        json_data = JSONRenderer().render(serializer.data)
         return HttpResponse(json_data, content_type='application/json')
     
     def post(self, request, *args, **kwargs):
