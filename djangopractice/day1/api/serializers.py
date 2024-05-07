@@ -70,7 +70,7 @@ class StudentSerializer(serializers.ModelSerializer):
 #         name = data.get('name')
 #         description = data.get('description')
 
-#         if name.lower() == 'anshu' and description.lower() != 'angel':
-#             raise serializers.ValidationError('Anshu you should always be angel please check correction in description')
+#         if name.lower() == 'kishor' and description.lower() != 'cricket':
+#             raise serializers.ValidationError('kishor you should always be criccketer please check correction in description')
         
 #         return data

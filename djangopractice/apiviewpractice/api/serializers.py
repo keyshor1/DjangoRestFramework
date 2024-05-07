@@ -21,6 +21,6 @@ class StudentSerializer(serializers.ModelSerializer):
         name = data.get('name')
         course = data.get('course')
 
-        if course == 'CE' and name.lower() == 'anshu':
-            raise serializers.ValidationError("Welcome cindrella, Anshu who is student in computer engineering is already enrolled you are the boss")
+        if course == 'CE' and name.lower() == 'kishor':
+            raise serializers.ValidationError("Welcome kishor, kishor who is student in computer engineering is already enrolled you are the boss")
         return data
